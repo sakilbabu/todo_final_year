@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_final_year/aboutPage.dart';
 import 'package:todo_final_year/focusMode.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -55,8 +56,10 @@ class AppDrawer extends StatelessWidget {
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
-                Navigator.pop(context);
-                // Navigate to the about screen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AboutPage()),
+                );
               },
             ),
           ],
