@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_final_year/focus_mode.dart';
+import 'package:todo_final_year/focusMode.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -43,8 +43,8 @@ class AppDrawer extends StatelessWidget {
               ),
               onTap: () {
                  Navigator.push(
-                   context,
-                  MaterialPageRoute(builder: (context) => StopWatch( )),
+                  context,
+                  MaterialPageRoute(builder: (context) => StopWatch()),
                 );
               },
             ),

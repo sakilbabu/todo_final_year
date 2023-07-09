@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 class StopWatch extends StatefulWidget {
@@ -57,7 +56,8 @@ class _StopWatchState extends State<StopWatch> {
     final hours = duration.inHours.toString().padLeft(2, '0');
     final minutes = (duration.inMinutes % 60).toString().padLeft(2, '0');
     final seconds = (duration.inSeconds % 60).toString().padLeft(2, '0');
-    final milliseconds = (duration.inMilliseconds % 1000 ~/ 10).toString().padLeft(2, '0');
+    final milliseconds =
+        (duration.inMilliseconds % 1000 ~/ 10).toString().padLeft(2, '0');
     return '$hours:$minutes:$seconds.$milliseconds';
   }
 
